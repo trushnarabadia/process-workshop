@@ -18,4 +18,14 @@ describe '#leap_year?' do
   it 'should return that year 2000 was a leap year' do
     expect(leap_year?(2000)).to eq true
   end
+
+  it 'should return false when given years 1700, 1800, and 1900' do
+    expect(leap_year?(1700)).to eq false
+    expect(leap_year?(1800)).to eq false
+    expect(leap_year?(1900)).to eq false
+  end
+
+  it 'should return true when given years 2004, 2008 and 2012' do
+    expect(leap_year?(2004)).to eq true
+  end
 end
