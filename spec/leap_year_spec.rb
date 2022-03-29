@@ -15,5 +15,10 @@
 require_relative "../lib/leap_year"
 
 describe LeapYear do
-
+  describe '#leap_year?' do 
+    it 'should respond to leap_year?' do
+      leapyear = LeapYear.new
+      expect(leapyear).to respond_to(:leap_year?)
+    end
+  end
 end
