@@ -14,11 +14,8 @@
 
 require_relative "../lib/leap_year"
 
-describe LeapYear do
-  describe '#leap_year?' do 
-    it 'should respond to leap_year?' do
-      leapyear = LeapYear.new
-      expect(leapyear).to respond_to(:leap_year?)
-    end
+describe '#leap_year?' do
+  it 'should return that year 2000 was a leap year' do
+    expect(leap_year?(2000)).to eq true
   end
 end
